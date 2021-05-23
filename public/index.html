@@ -35,7 +35,9 @@
       let c = document.getElementById("c");
       let date = new Date();
       const getDate = date.getDate();
-      if (getDate >= 24) {
+      const month = date.getMonth();
+      const year = date.getFullYear();
+      if (getDate >= 24 && year >= 2021 && month >= 4) {
         c.style.display = 'block';
       }
     }
