@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/prerna/static/css/main.5ca1cb40.chunk.css",
+    "main.js": "/prerna/static/js/main.75728f09.chunk.js",
+    "main.js.map": "/prerna/static/js/main.75728f09.chunk.js.map",
+    "runtime-main.js": "/prerna/static/js/runtime-main.0e6d6746.js",
+    "runtime-main.js.map": "/prerna/static/js/runtime-main.0e6d6746.js.map",
+    "static/js/2.f1cfc019.chunk.js": "/prerna/static/js/2.f1cfc019.chunk.js",
+    "static/js/2.f1cfc019.chunk.js.map": "/prerna/static/js/2.f1cfc019.chunk.js.map",
+    "index.html": "/prerna/index.html",
+    "static/css/main.5ca1cb40.chunk.css.map": "/prerna/static/css/main.5ca1cb40.chunk.css.map",
+    "static/js/2.f1cfc019.chunk.js.LICENSE.txt": "/prerna/static/js/2.f1cfc019.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0e6d6746.js",
+    "static/js/2.f1cfc019.chunk.js",
+    "static/css/main.5ca1cb40.chunk.css",
+    "static/js/main.75728f09.chunk.js"
+  ]
+}
