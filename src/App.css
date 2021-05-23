@@ -80,3 +80,7 @@ body {
   font-family: fantasy;
   font-size: calc(20px + 2vmin);
 }
+
+.timer-Clock {
+  font-size: 50px;
+}

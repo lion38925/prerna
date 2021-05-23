@@ -72,7 +72,7 @@ export class HappyBirthday extends Component {
           />
           <div className={`temp-banner ${this.state.tempBanner}`}>
             <div>Waiting for a Surprise</div>
-            <div>
+            <div className = 'timer-Clock'>
               <span>{this.state.time}</span>
             </div>
           </div>
