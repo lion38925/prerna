@@ -10,7 +10,7 @@ export class HappyBirthday extends Component {
       bannerClass: 'banner-hide',
       tempBanner: 'banner-show',
       displayAbout: 'about-thoughts-hide',
-      time: 0
+      time: new Date().toLocaleString()
     }
   }
   componentDidMount() {
@@ -18,7 +18,14 @@ export class HappyBirthday extends Component {
     const getDay = date.getDate();
     const month = date.getMonth();
     const year = date.getFullYear();
+
+    this.intervalID = setInterval(
+      () => this.tick(),
+      1000
+    );
+
     if (getDay >= 24 && year >= 2021 && month >= 4) {
+      clearInterval(this.intervalID);
       setTimeout(() => {
         this.showBanner();
       }, 3000);
@@ -28,6 +35,15 @@ export class HappyBirthday extends Component {
       })
     }
 
+  }
+
+  tick() {
+    this.setState({
+      time: new Date().toLocaleString()
+    });
+  }
+  componentWillUnmount() {
+    clearInterval(this.intervalID);
   }
 
   showBanner = () => {
@@ -54,8 +70,12 @@ export class HappyBirthday extends Component {
               },
             }}
           />
-          <div className={`temp-banner ${this.state.tempBanner}`}>Waiting for a Surprise
-        </div>
+          <div className={`temp-banner ${this.state.tempBanner}`}>
+            <div>Waiting for a Surprise</div>
+            <div>
+              <span>{this.state.time}</span>
+            </div>
+          </div>
         </div>
         <div className="App">
           <header className={`App-header ${this.state.bannerClass}`}>
@@ -64,10 +84,10 @@ export class HappyBirthday extends Component {
         </div>
         <div className={`about-heading ${this.state.displayAbout}`}>
           We love you peda
-          <p className='about-thoughts'>Happy Birthday my sweet baby senorita. Sada khush raho, aapka jeevan khushio bhara ho. Swast or khush raho <div> - Chotu</div></p>
-          <p className='about-thoughts'>Parmatma ki aseem kripa se hamesha swasth rahe aur career ko top height milea.<div> - Parmal</div></p>
+          <p className='about-thoughts'>Happy Birthday my sweet baby senorita. Sada khush raho, aapka jeevan khushio bhara ho. Swast or khush raho <span> - Chotu</span></p>
+          <p className='about-thoughts'>Parmatma ki aseem kripa se hamesha swasth rahe aur career ko top height milea.<span> - Parmal</span></p>
           <p className='about-thoughts'>Happy Birthday Gannu, puchhi... I wish you all the best on your Big Day and every day, may your life be full of joy, love and prosperity!
-          <div> - aman</div></p>
+          <span> - aman</span></p>
         </div>
       </React.Fragment>
     );
