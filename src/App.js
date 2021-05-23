@@ -50,7 +50,7 @@ export class HappyBirthday extends Component {
               },
             }}
           />
-          <div className={`temp-banner ${this.state.tempBanner}`}>Waiting for a Suprise
+          <div className={`temp-banner ${this.state.tempBanner}`}>Waiting for a Surprise
         </div>
         </div>
 
