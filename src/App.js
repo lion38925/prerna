@@ -65,7 +65,7 @@ export class HappyBirthday extends Component {
         <div className={`about-heading ${this.state.displayAbout}`}>
           We love you peda
           <p className='about-thoughts'>Happy Birthday my sweet baby senorita. Sada khush raho, aapka jeevan khushio bhara ho. Swast or khush raho <div> - Chotu</div></p>
-          <p className='about-thoughts'> <div> - Parmal</div></p>
+          <p className='about-thoughts'>Parmatma ki aseem kripa se hamesha swasth rahe aur career ko top height milea.<div> - Parmal</div></p>
           <p className='about-thoughts'>Happy Birthday Gannu, puchhi... I wish you all the best on your Big Day and every day, may your life be full of joy, love and prosperity!
           <div> - aman</div></p>
         </div>
